@@ -1,0 +1,1918 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "EZ_EAT",
+    "description": "",
+    "version": "1.0.0"
+  },
+  "tags": [
+    {
+      "name": "登录"
+    },
+    {
+      "name": "用户接口"
+    },
+    {
+      "name": "商家接口"
+    },
+    {
+      "name": "其他"
+    }
+  ],
+  "paths": {
+    "/user/home": {
+      "get": {
+        "summary": "获取用户首页信息",
+        "x-apifox-folder": "用户接口",
+        "x-apifox-status": "developing",
+        "deprecated": false,
+        "description": "",
+        "tags": [
+          "用户接口"
+        ],
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "成功",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {},
+                  "x-apifox-orders": [],
+                  "x-apifox-ignore-properties": []
+                },
+                "examples": {
+                  "1": {
+                    "summary": "成功示例",
+                    "value": "{\n    \"code\": 200,\n    \"msg\": \"获取数据成功~\",\n    \"data\": {\n        // 轮播图\n        \"carousels\": [\n            \"轮播图.jpg\",\n            \"轮播图.jpg\",\n            \"轮播图.jpg\",\n            \"轮播图.jpg\"\n        ],\n        // 热门餐厅数据\n        \"shopHots\": [\n            {\n                \"img\": \"餐厅图片.jpg\",\n                \"name\": \"餐厅名称\",\n                \"description\": \"餐厅简介\",\n                \"sort\": \"排序，int类型\",\n                \"id\": 1\n            }\n        ],\n        // 排行榜数据（这里只需要返四个餐厅数据）\n        \"shopRankings\": [\n            {\n                \"img\": \"餐厅图片.jpg\",\n                \"name\": \"餐厅名称\",\n                \"decription\": \"餐厅简介\",\n                \"rate\": \"4.8\", // 评分\n                \"average\": \"222\", // 人均消费\n                \"id\": \"1\"\n            }\n        ]\n    },\n}"
+                  },
+                  "2": {
+                    "summary": "成功示例 ",
+                    "value": {
+                      "code": 0,
+                      "msg": "获取数据成功~",
+                      "data": {
+                        "shopRankings": [
+                          {
+                            "average": 1321,
+                            "img": "images/195240_16014131219.webp.jpg",
+                            "rate": 1234,
+                            "name": "test",
+                            "description": "默认描述",
+                            "id": 4
+                          },
+                          {
+                            "average": 1321,
+                            "img": "images/195240_16014131219.webp.jpg",
+                            "rate": 124,
+                            "name": "test",
+                            "description": "默认描述",
+                            "id": 17
+                          },
+                          {
+                            "average": 1321,
+                            "img": "images/195240_16014131219.webp.jpg",
+                            "rate": 123,
+                            "name": "test",
+                            "description": "默认描述",
+                            "id": 11
+                          },
+                          {
+                            "average": 1321,
+                            "img": "images/195240_16014131219.webp.jpg",
+                            "rate": 66,
+                            "name": "test",
+                            "description": "默认描述",
+                            "id": 21
+                          },
+                          {
+                            "average": 1321,
+                            "img": "images/195240_16014131219.webp.jpg",
+                            "rate": 55,
+                            "name": "test",
+                            "description": "默认描述",
+                            "id": 25
+                          }
+                        ],
+                        "shopHots": [
+                          {
+                            "average": 1321,
+                            "img": "images/明日方舟.jpg",
+                            "rate": 2,
+                            "description": "默认描述",
+                            "id": 2,
+                            "sort": 1
+                          },
+                          {
+                            "average": 1321,
+                            "img": "images/195240_16014131219.webp.jpg",
+                            "rate": 3,
+                            "description": "默认描述",
+                            "id": 3,
+                            "sort": 2
+                          },
+                          {
+                            "average": 1321,
+                            "img": "images/195240_16014131219.webp.jpg",
+                            "rate": 12,
+                            "description": "默认描述",
+                            "id": 6,
+                            "sort": 3
+                          },
+                          {
+                            "average": 1321,
+                            "img": "images/195240_16014131219.webp.jpg",
+                            "rate": 1.2,
+                            "description": "默认描述",
+                            "id": 1,
+                            "sort": 5
+                          },
+                          {
+                            "average": 1321,
+                            "img": "images/195240_16014131219.webp.jpg",
+                            "rate": 1234,
+                            "description": "默认描述",
+                            "id": 4,
+                            "sort": 6
+                          },
+                          {
+                            "average": 1321,
+                            "img": "images/195240_16014131219.webp.jpg",
+                            "rate": 5,
+                            "description": "默认描述",
+                            "id": 5,
+                            "sort": 7
+                          }
+                        ],
+                        "carousels": [
+                          {
+                            "id": 1,
+                            "img": "images/dac3b118958fc3b53743b2cacf6da8cb.jpg",
+                            "shopId": 1,
+                            "sort": 1,
+                            "createdAt": "2022-11-02"
+                          },
+                          {
+                            "id": 5,
+                            "img": "images/dac3b118958fc3b53743b2cacf6da8cb.jpg",
+                            "shopId": 3,
+                            "sort": 2,
+                            "createdAt": "2022-11-02"
+                          },
+                          {
+                            "id": 3,
+                            "img": "images/dac3b118958fc3b53743b2cacf6da8cb.jpg",
+                            "shopId": 2,
+                            "sort": 3,
+                            "createdAt": "2022-11-02"
+                          },
+                          {
+                            "id": 4,
+                            "img": "images/dac3b118958fc3b53743b2cacf6da8cb.jpg",
+                            "shopId": 2,
+                            "sort": 4,
+                            "createdAt": "2022-11-02"
+                          },
+                          {
+                            "id": 7,
+                            "img": "images/dac3b118958fc3b53743b2cacf6da8cb.jpg",
+                            "shopId": 5,
+                            "sort": 5,
+                            "createdAt": "2022-11-02"
+                          },
+                          {
+                            "id": 6,
+                            "img": "images/dac3b118958fc3b53743b2cacf6da8cb.jpg",
+                            "shopId": 4,
+                            "sort": 6,
+                            "createdAt": "2022-11-02"
+                          }
+                        ]
+                      }
+                    }
+                  },
+                  "3": {
+                    "summary": "成功示例 ",
+                    "value": {
+                      "code": 0,
+                      "msg": "获取数据成功~",
+                      "data": {
+                        "shopRankings": [
+                          {
+                            "average": 1321,
+                            "img": "images/195240_16014131219.webp.jpg",
+                            "rate": 1234,
+                            "name": "test",
+                            "description": "默认描述",
+                            "id": 4
+                          },
+                          {
+                            "average": 1321,
+                            "img": "images/195240_16014131219.webp.jpg",
+                            "rate": 124,
+                            "name": "test",
+                            "description": "默认描述",
+                            "id": 17
+                          },
+                          {
+                            "average": 1321,
+                            "img": "images/195240_16014131219.webp.jpg",
+                            "rate": 123,
+                            "name": "test",
+                            "description": "默认描述",
+                            "id": 11
+                          },
+                          {
+                            "average": 1321,
+                            "img": "images/195240_16014131219.webp.jpg",
+                            "rate": 66,
+                            "name": "test",
+                            "description": "默认描述",
+                            "id": 21
+                          },
+                          {
+                            "average": 1321,
+                            "img": "images/195240_16014131219.webp.jpg",
+                            "rate": 55,
+                            "name": "test",
+                            "description": "默认描述",
+                            "id": 25
+                          }
+                        ],
+                        "shopHots": [
+                          {
+                            "average": 1321,
+                            "img": "images/明日方舟.jpg",
+                            "rate": 2,
+                            "description": "默认描述",
+                            "id": 2,
+                            "sort": 1
+                          },
+                          {
+                            "average": 1321,
+                            "img": "images/195240_16014131219.webp.jpg",
+                            "rate": 3,
+                            "description": "默认描述",
+                            "id": 3,
+                            "sort": 2
+                          },
+                          {
+                            "average": 1321,
+                            "img": "images/195240_16014131219.webp.jpg",
+                            "rate": 12,
+                            "description": "默认描述",
+                            "id": 6,
+                            "sort": 3
+                          },
+                          {
+                            "average": 1321,
+                            "img": "images/195240_16014131219.webp.jpg",
+                            "rate": 1.2,
+                            "description": "默认描述",
+                            "id": 1,
+                            "sort": 5
+                          },
+                          {
+                            "average": 1321,
+                            "img": "images/195240_16014131219.webp.jpg",
+                            "rate": 1234,
+                            "description": "默认描述",
+                            "id": 4,
+                            "sort": 6
+                          },
+                          {
+                            "average": 1321,
+                            "img": "images/195240_16014131219.webp.jpg",
+                            "rate": 5,
+                            "description": "默认描述",
+                            "id": 5,
+                            "sort": 7
+                          }
+                        ],
+                        "carousels": [
+                          {
+                            "id": 1,
+                            "img": "images/dac3b118958fc3b53743b2cacf6da8cb.jpg",
+                            "shopId": 1,
+                            "sort": 1,
+                            "createdAt": "2022-11-02"
+                          },
+                          {
+                            "id": 5,
+                            "img": "images/dac3b118958fc3b53743b2cacf6da8cb.jpg",
+                            "shopId": 3,
+                            "sort": 2,
+                            "createdAt": "2022-11-02"
+                          },
+                          {
+                            "id": 3,
+                            "img": "images/dac3b118958fc3b53743b2cacf6da8cb.jpg",
+                            "shopId": 2,
+                            "sort": 3,
+                            "createdAt": "2022-11-02"
+                          },
+                          {
+                            "id": 4,
+                            "img": "images/dac3b118958fc3b53743b2cacf6da8cb.jpg",
+                            "shopId": 2,
+                            "sort": 4,
+                            "createdAt": "2022-11-02"
+                          },
+                          {
+                            "id": 7,
+                            "img": "images/dac3b118958fc3b53743b2cacf6da8cb.jpg",
+                            "shopId": 5,
+                            "sort": 5,
+                            "createdAt": "2022-11-02"
+                          },
+                          {
+                            "id": 6,
+                            "img": "images/dac3b118958fc3b53743b2cacf6da8cb.jpg",
+                            "shopId": 4,
+                            "sort": 6,
+                            "createdAt": "2022-11-02"
+                          }
+                        ]
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "x-run-in-apifox'": "https://www.apifox.cn/web/project/1843844/apis/api-47862930-run"
+      }
+    },
+    "/user/login": {
+      "post": {
+        "summary": "登录",
+        "x-apifox-folder": "登录",
+        "x-apifox-status": "developing",
+        "deprecated": false,
+        "description": "",
+        "tags": [
+          "登录"
+        ],
+        "parameters": [],
+        "requestBody": {
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "name": {
+                    "type": "string",
+                    "example": "neo"
+                  },
+                  "password": {
+                    "type": "string",
+                    "example": "123456"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "成功",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {},
+                  "x-apifox-orders": [],
+                  "x-apifox-ignore-properties": []
+                },
+                "examples": {
+                  "1": {
+                    "summary": "成功示例",
+                    "value": {
+                      "data": {
+                        "token": "asda56e4g5e1r56s1dfef",
+                        "userInfo": {
+                          "name": "我是昵称",
+                          "img": "http://1.15.171.11:3000/images/头像.jpg",
+                          "mail": "邮箱qq.com",
+                          "id": 123
+                        }
+                      },
+                      "msg": "登录成功！",
+                      "status": 200
+                    }
+                  },
+                  "2": {
+                    "summary": "成功示例 ",
+                    "value": {
+                      "code": 0,
+                      "msg": "请求成功",
+                      "data": {
+                        "userInfo": {
+                          "name": "neo",
+                          "id": 1,
+                          "email": "pzc_neo@foxmail.com"
+                        },
+                        "token": "MTY2NzI4NDc2MjA0OXwxfG51bGx8W0JANjNjZTIw&null"
+                      }
+                    }
+                  },
+                  "3": {
+                    "summary": "成功示例 ",
+                    "value": {
+                      "code": 0,
+                      "msg": "请求成功",
+                      "data": {
+                        "userInfo": {
+                          "name": "neo",
+                          "id": 1,
+                          "email": "pzc_neo@foxmail.com"
+                        },
+                        "token": "MTY2NzI4NzQ0Mzc2M3wxfEQxNDY0NThBMTA2Nzg1NkV8W0JAZWI5MjRm&E9772C6C18E585BB"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "x-run-in-apifox'": "https://www.apifox.cn/web/project/1843844/apis/api-47862931-run"
+      }
+    },
+    "/register/user": {
+      "post": {
+        "summary": "用户注册",
+        "x-apifox-folder": "登录",
+        "x-apifox-status": "developing",
+        "deprecated": false,
+        "description": "",
+        "tags": [
+          "登录"
+        ],
+        "parameters": [],
+        "requestBody": {
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "account": {
+                    "type": "string",
+                    "example": "test"
+                  },
+                  "password": {
+                    "type": "string",
+                    "example": "123456"
+                  },
+                  "mailbox": {
+                    "type": "string",
+                    "example": "123@qq.com"
+                  },
+                  "userImg": {
+                    "type": "string",
+                    "example": "images/123.jpg"
+                  }
+                },
+                "required": [
+                  "account",
+                  "password",
+                  "mailbox",
+                  "userImg"
+                ]
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "成功",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {},
+                  "x-apifox-orders": [],
+                  "x-apifox-ignore-properties": []
+                },
+                "examples": {
+                  "1": {
+                    "summary": "成功示例",
+                    "value": {
+                      "code": 0,
+                      "msg": "注册成功！"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "x-run-in-apifox'": "https://www.apifox.cn/web/project/1843844/apis/api-47862932-run"
+      }
+    },
+    "/user/home/ranking": {
+      "get": {
+        "summary": "获取全部推荐排行榜餐厅数据",
+        "x-apifox-folder": "用户接口",
+        "x-apifox-status": "developing",
+        "deprecated": false,
+        "description": "",
+        "tags": [
+          "用户接口"
+        ],
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "成功",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {},
+                  "x-apifox-orders": [],
+                  "x-apifox-ignore-properties": []
+                },
+                "examples": {
+                  "1": {
+                    "summary": "成功示例",
+                    "value": "{\r\n    \"code\": 0,\r\n    \"msg\": \"获取数据成功~\",\r\n    \"data\": {\r\n        // 排行榜全部数据\r\n        \"shopRankingAll\": [\r\n            {\r\n                \"img\": \"餐厅图片.jpg\",\r\n                \"name\": \"餐厅名称\",\r\n                \"description\": \"餐厅简介\",\r\n                \"rate\": \"4.8\", // 评分\r\n                \"average\": \"222\", // 人均消费\r\n                \"id\": \"1\"\r\n            }\r\n        ]\r\n    }\r\n}"
+                  },
+                  "2": {
+                    "summary": "成功示例 ",
+                    "value": {
+                      "code": 0,
+                      "msg": "请求成功",
+                      "data": {
+                        "shopRankingAll": [
+                          {
+                            "average": 1321,
+                            "img": "images/195240_16014131219.webp.jpg",
+                            "rate": 1234,
+                            "name": "test",
+                            "description": "默认描述",
+                            "id": 4
+                          },
+                          {
+                            "average": 1321,
+                            "img": "images/195240_16014131219.webp.jpg",
+                            "rate": 124,
+                            "name": "test",
+                            "description": "默认描述",
+                            "id": 17
+                          },
+                          {
+                            "average": 1321,
+                            "img": "images/195240_16014131219.webp.jpg",
+                            "rate": 123,
+                            "name": "test",
+                            "description": "默认描述",
+                            "id": 11
+                          },
+                          {
+                            "average": 1321,
+                            "img": "images/195240_16014131219.webp.jpg",
+                            "rate": 66,
+                            "name": "test",
+                            "description": "默认描述",
+                            "id": 21
+                          },
+                          {
+                            "average": 1321,
+                            "img": "images/195240_16014131219.webp.jpg",
+                            "rate": 55,
+                            "name": "test",
+                            "description": "默认描述",
+                            "id": 25
+                          },
+                          {
+                            "average": 1321,
+                            "img": "images/195240_16014131219.webp.jpg",
+                            "rate": 31,
+                            "name": "test",
+                            "description": "默认描述",
+                            "id": 31
+                          },
+                          {
+                            "average": 1321,
+                            "img": "images/195240_16014131219.webp.jpg",
+                            "rate": 30,
+                            "name": "test",
+                            "description": "默认描述",
+                            "id": 30
+                          },
+                          {
+                            "average": 1321,
+                            "img": "images/195240_16014131219.webp.jpg",
+                            "rate": 29,
+                            "name": "test",
+                            "description": "默认描述",
+                            "id": 29
+                          },
+                          {
+                            "average": 1321,
+                            "img": "images/195240_16014131219.webp.jpg",
+                            "rate": 28,
+                            "name": "test",
+                            "description": "默认描述",
+                            "id": 28
+                          },
+                          {
+                            "average": 1321,
+                            "img": "images/195240_16014131219.webp.jpg",
+                            "rate": 27,
+                            "name": "test",
+                            "description": "默认描述",
+                            "id": 27
+                          },
+                          {
+                            "average": 1321,
+                            "img": "images/195240_16014131219.webp.jpg",
+                            "rate": 26,
+                            "name": "test",
+                            "description": "默认描述",
+                            "id": 26
+                          },
+                          {
+                            "average": 1321,
+                            "img": "images/195240_16014131219.webp.jpg",
+                            "rate": 24,
+                            "name": "test",
+                            "description": "默认描述",
+                            "id": 24
+                          },
+                          {
+                            "average": 1321,
+                            "img": "images/195240_16014131219.webp.jpg",
+                            "rate": 23,
+                            "name": "test",
+                            "description": "默认描述",
+                            "id": 23
+                          },
+                          {
+                            "average": 1321,
+                            "img": "images/195240_16014131219.webp.jpg",
+                            "rate": 22,
+                            "name": "test",
+                            "description": "默认描述",
+                            "id": 22
+                          },
+                          {
+                            "average": 1321,
+                            "img": "images/195240_16014131219.webp.jpg",
+                            "rate": 20,
+                            "name": "test",
+                            "description": "默认描述",
+                            "id": 20
+                          },
+                          {
+                            "average": 1321,
+                            "img": "images/195240_16014131219.webp.jpg",
+                            "rate": 18,
+                            "name": "test",
+                            "description": "默认描述",
+                            "id": 18
+                          },
+                          {
+                            "average": 1321,
+                            "img": "images/195240_16014131219.webp.jpg",
+                            "rate": 16,
+                            "name": "test",
+                            "description": "默认描述",
+                            "id": 16
+                          },
+                          {
+                            "average": 1321,
+                            "img": "images/195240_16014131219.webp.jpg",
+                            "rate": 15,
+                            "name": "test",
+                            "description": "默认描述",
+                            "id": 15
+                          },
+                          {
+                            "average": 1321,
+                            "img": "images/195240_16014131219.webp.jpg",
+                            "rate": 14,
+                            "name": "test",
+                            "description": "默认描述",
+                            "id": 14
+                          },
+                          {
+                            "average": 1321,
+                            "img": "images/195240_16014131219.webp.jpg",
+                            "rate": 13,
+                            "name": "test",
+                            "description": "默认描述",
+                            "id": 13
+                          },
+                          {
+                            "average": 1321,
+                            "img": "images/195240_16014131219.webp.jpg",
+                            "rate": 12,
+                            "name": "test",
+                            "description": "默认描述",
+                            "id": 6
+                          },
+                          {
+                            "average": 1321,
+                            "img": "images/195240_16014131219.webp.jpg",
+                            "rate": 12,
+                            "name": "test",
+                            "description": "默认描述",
+                            "id": 12
+                          },
+                          {
+                            "average": 1321,
+                            "img": "images/195240_16014131219.webp.jpg",
+                            "rate": 10,
+                            "name": "test",
+                            "description": "默认描述",
+                            "id": 10
+                          },
+                          {
+                            "average": 1321,
+                            "img": "images/195240_16014131219.webp.jpg",
+                            "rate": 9,
+                            "name": "test",
+                            "description": "默认描述",
+                            "id": 9
+                          },
+                          {
+                            "average": 1321,
+                            "img": "images/195240_16014131219.webp.jpg",
+                            "rate": 8,
+                            "name": "test",
+                            "description": "默认描述",
+                            "id": 8
+                          },
+                          {
+                            "average": 1321,
+                            "img": "images/195240_16014131219.webp.jpg",
+                            "rate": 7,
+                            "name": "test",
+                            "description": "默认描述",
+                            "id": 7
+                          },
+                          {
+                            "average": 1321,
+                            "img": "images/195240_16014131219.webp.jpg",
+                            "rate": 5,
+                            "name": "test",
+                            "description": "默认描述",
+                            "id": 5
+                          },
+                          {
+                            "average": 1321,
+                            "img": "images/195240_16014131219.webp.jpg",
+                            "rate": 5,
+                            "name": "test",
+                            "description": "默认描述",
+                            "id": 32
+                          },
+                          {
+                            "average": 1321,
+                            "img": "images/195240_16014131219.webp.jpg",
+                            "rate": 3,
+                            "name": "test",
+                            "description": "默认描述",
+                            "id": 3
+                          },
+                          {
+                            "average": 1321,
+                            "img": "images/明日方舟.jpg",
+                            "rate": 2,
+                            "name": "test",
+                            "description": "默认描述",
+                            "id": 2
+                          },
+                          {
+                            "average": 1321,
+                            "img": "images/195240_16014131219.webp.jpg",
+                            "rate": 2,
+                            "name": "test",
+                            "description": "默认描述",
+                            "id": 19
+                          },
+                          {
+                            "average": 1321,
+                            "img": "images/195240_16014131219.webp.jpg",
+                            "rate": 1.2,
+                            "name": "test",
+                            "description": "默认描述",
+                            "id": 1
+                          }
+                        ]
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "x-run-in-apifox'": "https://www.apifox.cn/web/project/1843844/apis/api-47862933-run"
+      }
+    },
+    "/register/shop": {
+      "post": {
+        "summary": "商家注册",
+        "x-apifox-folder": "登录",
+        "x-apifox-status": "developing",
+        "deprecated": false,
+        "description": "",
+        "tags": [
+          "登录"
+        ],
+        "parameters": [],
+        "requestBody": {
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "account": {
+                    "type": "string",
+                    "example": "test"
+                  },
+                  "password": {
+                    "type": "string",
+                    "example": "123456"
+                  },
+                  "mailBox": {
+                    "type": "string",
+                    "example": "123@qq.com"
+                  },
+                  "shopName": {
+                    "type": "string",
+                    "example": "test"
+                  },
+                  "shopPhone": {
+                    "type": "string",
+                    "example": "12345566788"
+                  },
+                  "shopAddress": {
+                    "type": "string",
+                    "example": "testAdress"
+                  },
+                  "shopDescription": {
+                    "type": "string",
+                    "example": "desc"
+                  },
+                  "shopImg": {
+                    "type": "string",
+                    "example": "images/12.jpg"
+                  },
+                  "userImg": {
+                    "type": "string",
+                    "example": "images/34.jpg"
+                  }
+                },
+                "required": [
+                  "account",
+                  "password",
+                  "mailBox",
+                  "shopName",
+                  "shopPhone",
+                  "shopAddress",
+                  "shopDescription",
+                  "shopImg",
+                  "userImg"
+                ]
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "成功",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {},
+                  "x-apifox-orders": [],
+                  "x-apifox-ignore-properties": []
+                }
+              }
+            }
+          }
+        },
+        "x-run-in-apifox'": "https://www.apifox.cn/web/project/1843844/apis/api-47862934-run"
+      }
+    },
+    "/user/restaurant": {
+      "get": {
+        "summary": "获取餐厅详情",
+        "x-apifox-folder": "用户接口",
+        "x-apifox-status": "developing",
+        "deprecated": false,
+        "description": "",
+        "tags": [
+          "用户接口"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "description": "",
+            "required": true,
+            "example": "1",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "成功",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {},
+                  "x-apifox-orders": [],
+                  "x-apifox-ignore-properties": []
+                },
+                "examples": {
+                  "1": {
+                    "summary": "成功示例",
+                    "value": "{\r\n    \"data\": {\r\n        // 餐厅详细数据\r\n        \"shopDetail\": {\r\n            \"img\": \"餐厅图片.jpg\",\r\n            \"name\": \"餐厅名称\",\r\n            \"phone\": \"餐厅电话15296123456\",\r\n            \"address\": \"餐厅地址\",\r\n            \"score\": \"4.9 (2,918)\", // 评分\r\n            \"average\": \"54.000\", // 人均消费\r\n            \"perRoom\": \"412.00\", // 房间平均消费\r\n            \"description\": \"餐厅简介\",\r\n            \"icons\": [\r\n                \"wifi.jpg\",\r\n                \"餐具.jpg\",\r\n                \"空调.jpg\",\r\n                \"住宿.jpg\"\r\n            ], //  餐厅功能图标\r\n            \"id\": \"1\"\r\n        }\r\n    },\r\n    \"msg\": \"获取数据成功~\",\r\n    \"status\": 0\r\n}"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "x-run-in-apifox'": "https://www.apifox.cn/web/project/1843844/apis/api-47862935-run"
+      }
+    },
+    "/user/order/lower": {
+      "get": {
+        "summary": "获取下单页餐厅信息",
+        "x-apifox-folder": "用户接口",
+        "x-apifox-status": "developing",
+        "deprecated": false,
+        "description": "",
+        "tags": [
+          "用户接口"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "description": "餐厅id",
+            "required": true,
+            "example": "1",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "成功",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {},
+                  "x-apifox-orders": [],
+                  "x-apifox-ignore-properties": []
+                },
+                "examples": {
+                  "1": {
+                    "summary": "成功示例",
+                    "value": "{\r\n    \"code\": 200,\r\n    \"msg\": \"获取数据成功~\",\r\n    \"data\": {\r\n        // 下单页餐厅数据\r\n        \"shopInfo\": [\r\n            {\r\n                \"img\": \"餐厅图片.jpg\",\r\n                \"name\": \"餐厅名称\",\r\n                \"phone\": \"餐厅电话15296123456\",\r\n                \"address\": \"餐厅地址\",\r\n                \"id\": \"1\"\r\n            }\r\n        ]\r\n    }\r\n}"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "x-run-in-apifox'": "https://www.apifox.cn/web/project/1843844/apis/api-47862936-run"
+      }
+    },
+    "/user/order/add": {
+      "post": {
+        "summary": "提交订单",
+        "x-apifox-folder": "用户接口",
+        "x-apifox-status": "developing",
+        "deprecated": false,
+        "description": "",
+        "tags": [
+          "用户接口"
+        ],
+        "parameters": [],
+        "requestBody": {
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "shopId": {
+                    "type": "string",
+                    "example": "1"
+                  },
+                  "dateValue": {
+                    "type": "string",
+                    "description": "预定时间",
+                    "example": "2022年11月5日"
+                  },
+                  "haveMealsGuests": {
+                    "type": "string",
+                    "description": "用餐人数",
+                    "example": "3"
+                  },
+                  "haveMealsTables": {
+                    "type": "string",
+                    "description": "用餐餐桌数",
+                    "example": "2"
+                  },
+                  "name": {
+                    "type": "string",
+                    "description": "姓名",
+                    "example": "name1"
+                  },
+                  "mail": {
+                    "type": "string",
+                    "description": "邮箱",
+                    "example": "mail@qq.com"
+                  },
+                  "phone": {
+                    "type": "string",
+                    "description": "电话",
+                    "example": "134175192387"
+                  },
+                  "message": {
+                    "type": "string",
+                    "description": "留言",
+                    "example": "meno01"
+                  },
+                  "token": {
+                    "type": "string",
+                    "example": "eyJ0aW1lc3RhbXAiOjE2Njc3MTYwMTQwNTYsInVzZXJJZCI6MSwic2hvcElkIjoxLCJzaWduIjoiOWMyNzgyNDM3ODJlZDdhOTBjY2FkYWNhMDRkMmFiY2Y4YjZmZTZkMTlhNmRjMzQyYzVlODAyYWQzZDNlYzU4YyJ9"
+                  }
+                },
+                "required": [
+                  "dateValue",
+                  "haveMealsGuests",
+                  "haveMealsTables",
+                  "name",
+                  "mail",
+                  "phone",
+                  "token"
+                ]
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "成功",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {},
+                  "x-apifox-orders": [],
+                  "x-apifox-ignore-properties": []
+                },
+                "examples": {
+                  "1": {
+                    "summary": "成功示例",
+                    "value": "{\r\n    // **下单提交的信息**\r\n    \"token\": \"12312asdasgsdf\",\r\n    \"data\": {\r\n        \"shopId\": 1,\r\n        \"dateValue\": \"预定时间\",\r\n        \"haveMealsTime\": \"用餐时间\",\r\n        \"haveMealsGuests\": \"用餐人数\",\r\n        \"haveMealsTables\": \"用餐桌数\",\r\n        \"name\": \"用户预定=姓名\",\r\n        \"mail\": \"邮箱\",\r\n        \"phone\": \"电话\",\r\n        \"message\": \"留言\",\r\n        \"id\": \"餐厅id\",\r\n    }\r\n},\r\n{\r\n    // 返回信息\r\n    \"msg\": \"预定成功~\",\r\n    \"status\": 200\r\n}"
+                  },
+                  "2": {
+                    "summary": "成功示例 1",
+                    "value": "{\r\n    // **下单提交的信息**\r\n    \"token\": \"12312asdasgsdf\",\r\n    \"data\": {\r\n        \"restaurantImg\": \"餐厅图片\",\r\n        \"restaurantName\": \"餐厅名字\",\r\n        \"shopPhone\": \"餐厅电话15296123456\",\r\n        \"restaurantAddress\": \"餐厅地址\",\r\n        \"dateValue\": \"预定时间\",\r\n        \"haveMealsTime\": \"用餐时间\",\r\n        \"haveMealsGuests\": \"用餐人数\",\r\n        \"haveMealsTables\": \"用餐桌数\",\r\n        \"name\": \"用户预定=姓名\",\r\n        \"mail\": \"邮箱\",\r\n        \"phone\": \"电话\",\r\n        \"message\": \"留言\",\r\n        \"id\": \"餐厅id\",\r\n    }\r\n},\r\n{\r\n    // 返回信息\r\n    \"msg\": \"预定成功~\",\r\n    \"status\": 200\r\n}"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "x-run-in-apifox'": "https://www.apifox.cn/web/project/1843844/apis/api-47862937-run"
+      }
+    },
+    "/user/search/info": {
+      "get": {
+        "summary": "获取搜索页信息",
+        "x-apifox-folder": "用户接口",
+        "x-apifox-status": "developing",
+        "deprecated": false,
+        "description": "",
+        "tags": [
+          "用户接口"
+        ],
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "成功",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {},
+                  "x-apifox-orders": [],
+                  "x-apifox-ignore-properties": []
+                },
+                "examples": {
+                  "1": {
+                    "summary": "成功示例",
+                    "value": "{\r\n    \"code\": 200,\r\n    \"msg\": \"获取数据成功~\",\r\n    \"data\": {\r\n        // 热门目的地（关键词）\r\n        \"hotPlaces\": [\r\n            \"Lombok\",\r\n            \"Yogyakarta\",\r\n            \"Bali\",\r\n            \"Malang\",\r\n            \"Sumba\",\r\n            \"Bangka Belitung\"\r\n        ]\r\n    }\r\n}"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "x-run-in-apifox'": "https://www.apifox.cn/web/project/1843844/apis/api-47862938-run"
+      }
+    },
+    "/user/search": {
+      "get": {
+        "summary": "根据关键词搜索展示内容",
+        "x-apifox-folder": "用户接口",
+        "x-apifox-status": "developing",
+        "deprecated": false,
+        "description": "",
+        "tags": [
+          "用户接口"
+        ],
+        "parameters": [
+          {
+            "name": "value",
+            "in": "query",
+            "description": "",
+            "required": true,
+            "example": "na",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "type": "object",
+                "properties": {}
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "成功",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {},
+                  "x-apifox-orders": [],
+                  "x-apifox-ignore-properties": []
+                },
+                "examples": {
+                  "1": {
+                    "summary": "成功示例",
+                    "value": "{\r\n    \"code\": 200,\r\n    \"msg\": \"获取数据成功~\",\r\n    \"data\": {\r\n        // 搜索内容\r\n        \"shopList\": [\r\n            {\r\n                \"img\": \"餐厅图片.jpg\",\r\n                \"name\": \"餐厅名称\",\r\n                \"description\": \"餐厅简介\",\r\n                \"rate\": \"4.8\", // 评分\r\n                \"average\": \"541.000\", // 人均\r\n                \"isShowLike\": \"flase\", // 喜欢\r\n                \"id\": 1\r\n            }\r\n        ]\r\n    },\r\n}"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "x-run-in-apifox'": "https://www.apifox.cn/web/project/1843844/apis/api-47862939-run"
+      }
+    },
+    "/user/search/popular": {
+      "post": {
+        "summary": "更改餐厅收藏状态",
+        "x-apifox-folder": "用户接口",
+        "x-apifox-status": "developing",
+        "deprecated": false,
+        "description": "",
+        "tags": [
+          "用户接口"
+        ],
+        "parameters": [],
+        "requestBody": {
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "shopId": {
+                    "type": "string",
+                    "example": "1"
+                  },
+                  "token": {
+                    "type": "string",
+                    "example": "eyJ0aW1lc3RhbXAiOjE2Njc3MTYwMTQwNTYsInVzZXJJZCI6MSwic2hvcElkIjoxLCJzaWduIjoiOWMyNzgyNDM3ODJlZDdhOTBjY2FkYWNhMDRkMmFiY2Y4YjZmZTZkMTlhNmRjMzQyYzVlODAyYWQzZDNlYzU4YyJ9"
+                  }
+                },
+                "required": [
+                  "shopId",
+                  "token"
+                ]
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "成功",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {},
+                  "x-apifox-orders": [],
+                  "x-apifox-ignore-properties": []
+                },
+                "examples": {
+                  "1": {
+                    "summary": "成功示例",
+                    "value": {
+                      "data": {
+                        "isShowLike": "true//**//false"
+                      },
+                      "msg": "收藏成功~//**//取消收藏~",
+                      "status": 200
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "x-run-in-apifox'": "https://www.apifox.cn/web/project/1843844/apis/api-47862940-run"
+      }
+    },
+    "/user/order": {
+      "post": {
+        "summary": "获取用户订单列表",
+        "x-apifox-folder": "用户接口",
+        "x-apifox-status": "developing",
+        "deprecated": false,
+        "description": "",
+        "tags": [
+          "用户接口"
+        ],
+        "parameters": [],
+        "requestBody": {
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "token": {
+                    "type": "string",
+                    "example": "eyJ0aW1lc3RhbXAiOjE2Njc3MTYwMTQwNTYsInVzZXJJZCI6MSwic2hvcElkIjoxLCJzaWduIjoiOWMyNzgyNDM3ODJlZDdhOTBjY2FkYWNhMDRkMmFiY2Y4YjZmZTZkMTlhNmRjMzQyYzVlODAyYWQzZDNlYzU4YyJ9"
+                  }
+                },
+                "required": [
+                  "token"
+                ]
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "成功",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {},
+                  "x-apifox-orders": [],
+                  "x-apifox-ignore-properties": []
+                },
+                "examples": {
+                  "1": {
+                    "summary": "成功示例",
+                    "value": "{\r\n    \"code\": 0,\r\n    \"msg\": \"获取数据成功~\",\r\n    \"data\": {\r\n        // 订单内容\r\n        \"orders\": [\r\n            {\r\n                \"img\": \"餐厅图片.jpg\",\r\n                \"name\": \"餐厅名称\",\r\n                \"phone\": \"餐厅电话15296123456\",\r\n                \"address\": \"餐厅位置\",\r\n                \"quantity\": \"2\", // 人数\r\n                \"createdAt\": \"Fri, 23 Sep at 17:30\", // 日期\r\n                \"id\": 1 // 订单id\r\n            }\r\n        ]\r\n    }\r\n}"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "x-run-in-apifox'": "https://www.apifox.cn/web/project/1843844/apis/api-47862941-run"
+      }
+    },
+    "/user/like": {
+      "post": {
+        "summary": "获取用户收藏列表",
+        "x-apifox-folder": "用户接口",
+        "x-apifox-status": "developing",
+        "deprecated": false,
+        "description": "",
+        "tags": [
+          "用户接口"
+        ],
+        "parameters": [],
+        "requestBody": {
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "token": {
+                    "type": "string",
+                    "example": "eyJ0aW1lc3RhbXAiOjE2Njc3MTYwMTQwNTYsInVzZXJJZCI6MSwic2hvcElkIjoxLCJzaWduIjoiOWMyNzgyNDM3ODJlZDdhOTBjY2FkYWNhMDRkMmFiY2Y4YjZmZTZkMTlhNmRjMzQyYzVlODAyYWQzZDNlYzU4YyJ9"
+                  }
+                },
+                "required": [
+                  "token"
+                ]
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "成功",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {},
+                  "x-apifox-orders": [],
+                  "x-apifox-ignore-properties": []
+                },
+                "examples": {
+                  "1": {
+                    "summary": "成功示例",
+                    "value": "{\r\n    \"code\": 0,\r\n    \"msg\": \"获取数据成功~\",\r\n    \"data\": {\r\n        // 收藏内容\r\n        \"collections\": [\r\n            {\r\n                \"img\": \"餐厅图片.jpg\",\r\n                \"name\": \"餐厅名称\",\r\n                \"address\": \"餐厅位置\",\r\n                \"average\": \"115.00\", // 人均\r\n                \"id\": 1, // 餐厅id \r\n                \"cid\": 1 // 收藏id\r\n            }\r\n        ]\r\n    },\r\n}"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "x-run-in-apifox'": "https://www.apifox.cn/web/project/1843844/apis/api-47862942-run"
+      }
+    },
+    "/user/mail": {
+      "post": {
+        "summary": "获取邮件信息",
+        "x-apifox-folder": "用户接口",
+        "x-apifox-status": "developing",
+        "deprecated": false,
+        "description": "",
+        "tags": [
+          "用户接口"
+        ],
+        "parameters": [],
+        "requestBody": {
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "type": {
+                    "type": "string",
+                    "example": "1"
+                  },
+                  "token": {
+                    "type": "string",
+                    "example": "eyJ0aW1lc3RhbXAiOjE2Njc3MTYwMTQwNTYsInVzZXJJZCI6MSwic2hvcElkIjoxLCJzaWduIjoiOWMyNzgyNDM3ODJlZDdhOTBjY2FkYWNhMDRkMmFiY2Y4YjZmZTZkMTlhNmRjMzQyYzVlODAyYWQzZDNlYzU4YyJ9"
+                  }
+                },
+                "required": [
+                  "type",
+                  "token"
+                ]
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "成功",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {},
+                  "x-apifox-orders": [],
+                  "x-apifox-ignore-properties": []
+                },
+                "examples": {
+                  "1": {
+                    "summary": "成功示例",
+                    "value": "{\r\n    \"code\": 200,\r\n    \"msg\": \"获取数据成功~\",\r\n    \"data\": {\r\n        // 邮件列表\r\n        \"mails\": [\r\n            {\r\n                \"title\": \"邮件标题\",\r\n                \"content\": \"邮件简介\",\r\n                \"isRead\": \"false\", // false未读  true已读\r\n                \"createdAt\": \"May 12\"\r\n                \"id\": 1 // 邮件id\r\n            }\r\n        ]\r\n    }\r\n}"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "x-run-in-apifox'": "https://www.apifox.cn/web/project/1843844/apis/api-47862943-run"
+      }
+    },
+    "/user/mail/info": {
+      "post": {
+        "summary": "获取邮件详细信息",
+        "x-apifox-folder": "用户接口",
+        "x-apifox-status": "developing",
+        "deprecated": false,
+        "description": "",
+        "tags": [
+          "用户接口"
+        ],
+        "parameters": [],
+        "requestBody": {
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "id": {
+                    "type": "string",
+                    "example": "1"
+                  },
+                  "token": {
+                    "type": "string",
+                    "example": "eyJ0aW1lc3RhbXAiOjE2NjczODcxNzAwOTIsInVzZXJJZCI6MSwic2hvcElkIjowLCJzaWduIjoiNTRmYWY5YWI1ODYwMjllOTNiNzk1ZDM5M2M5ZTYxZjk5NGY3MWJlOTcxMmRmOGFiMDRjNWU0ZWUzNjA5YWNmMyJ9"
+                  }
+                },
+                "required": [
+                  "id",
+                  "token"
+                ]
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "成功",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {},
+                  "x-apifox-orders": [],
+                  "x-apifox-ignore-properties": []
+                },
+                "examples": {
+                  "1": {
+                    "summary": "成功示例",
+                    "value": "{\r\n    \"data\": {\r\n        // 邮件信息\r\n        \"mailDetail\": [\r\n            {\r\n                \"titel\": \"标题\",\r\n                \"info\": \"信息\",\r\n                \"reserveStatus\": \"false\",// false失败  true成功\r\n                \"id\": 1 // 邮件id\r\n            }\r\n        ]\r\n    },\r\n    \"msg\": \"获取数据成功~\",\r\n    \"status\": 200\r\n}"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "x-run-in-apifox'": "https://www.apifox.cn/web/project/1843844/apis/api-47862944-run"
+      }
+    },
+    "/user/category": {
+      "get": {
+        "summary": "获取类别信息",
+        "x-apifox-folder": "用户接口",
+        "x-apifox-status": "developing",
+        "deprecated": false,
+        "description": "",
+        "tags": [
+          "用户接口"
+        ],
+        "parameters": [
+          {
+            "name": "type",
+            "in": "query",
+            "description": "1是New2是Discount3是Discount4是Dinner5是BBQ",
+            "required": true,
+            "example": "1",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "type": "object",
+                "properties": {}
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "成功",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {},
+                  "x-apifox-orders": [],
+                  "x-apifox-ignore-properties": []
+                }
+              }
+            }
+          }
+        },
+        "x-run-in-apifox'": "https://www.apifox.cn/web/project/1843844/apis/api-47862945-run"
+      }
+    },
+    "/shop/home": {
+      "get": {
+        "summary": "获取首页信息",
+        "x-apifox-folder": "商家接口",
+        "x-apifox-status": "developing",
+        "deprecated": false,
+        "description": "",
+        "tags": [
+          "商家接口"
+        ],
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "成功",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {},
+                  "x-apifox-orders": [],
+                  "x-apifox-ignore-properties": []
+                },
+                "examples": {
+                  "1": {
+                    "summary": "成功示例",
+                    "value": "{\r\n  \"data\": {\r\n    // 季度销售额数据\r\n    \"reserveSaleData\": {\r\n      \"date\": ['一季度', '二季度', '三季度', '四季度'\r\n      ],\r\n      \"money\": [\r\n        54168,\r\n        84651,\r\n        85451,\r\n        156158\r\n      ]\r\n    },\r\n    // 周销售额\r\n    \"salesVolume\": {\r\n      \"date\": ['周一', '周二', '周三', '周四', '周五', '周六', '周日'\r\n      ],\r\n      \"money\": ['500', '700', '555', '888', '230', '789', '452'\r\n      ]\r\n    },\r\n    // 月预定\r\n    \"monthReserve\": {\r\n      \"date\": ['上旬', '中旬', '下旬'\r\n      ],\r\n      \"quantity\": ['452', '552', '122'\r\n      ]\r\n    },\r\n    \"smallTable\": 20, // 小桌预定数\r\n    \"inTable\": 20, // 中桌预定数\r\n    \"largeTable\": 20 // 大桌预定数\r\n  },\r\n  \"msg\": \"获取数据成功~\",\r\n  \"status\": 200\r\n}"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "x-run-in-apifox'": "https://www.apifox.cn/web/project/1843844/apis/api-47862946-run"
+      }
+    },
+    "/shop/order": {
+      "post": {
+        "summary": "获取商家订单列表",
+        "x-apifox-folder": "商家接口",
+        "x-apifox-status": "developing",
+        "deprecated": false,
+        "description": "",
+        "tags": [
+          "商家接口"
+        ],
+        "parameters": [],
+        "requestBody": {
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "token": {
+                    "type": "string",
+                    "description": "token里面包含了shopId，所以只传token就行了",
+                    "example": "eyJ0aW1lc3RhbXAiOjE2Njc3MTYwMTQwNTYsInVzZXJJZCI6MSwic2hvcElkIjoxLCJzaWduIjoiOWMyNzgyNDM3ODJlZDdhOTBjY2FkYWNhMDRkMmFiY2Y4YjZmZTZkMTlhNmRjMzQyYzVlODAyYWQzZDNlYzU4YyJ9"
+                  }
+                },
+                "required": [
+                  "token"
+                ]
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "成功",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {},
+                  "x-apifox-orders": [],
+                  "x-apifox-ignore-properties": []
+                },
+                "examples": {
+                  "1": {
+                    "summary": "成功示例",
+                    "value": "{\r\n    \"code\": 0,\r\n    \"msg\": \"获取数据成功\",\r\n    \"data\": [\r\n        {\r\n            \"id\": 123, // 订单id,\r\n            \"img\": \"桌子图片.jpg\",\r\n            \"tableName\": \"Tables 02\", // 桌号\r\n            \"status\": \"Not available\", //false=Not available、true=Available Now\r\n            \"isShowStatus\": \"false\", // 控制桌子状态是否可用（是否可以预定）// 这个和上面那个貌似是一样的，只留上面那个\r\n            \"price\": \"200.00\", // 消费\r\n            \"time\": \"17:00-19:00\", // 预定时间\r\n            \"tableId\": 341 // 桌子id\r\n        }\r\n    ]\r\n}"
+                  },
+                  "2": {
+                    "summary": "成功示例 1",
+                    "value": "{\r\n    \"code\": 0,\r\n    \"msg\": \"获取数据成功\",\r\n    \"data\": [\r\n        {\r\n            \"id\": 123, // 订单id,\r\n            \"img\": \"桌子图片.jpg\",\r\n            \"tableName\": \"Tables 02\", // 桌号\r\n            \"status\": \"Not available\", //false=Not available、true=Available Now\r\n            \"isShowStatus\": \"false\", // 控制桌子状态是否可用（是否可以预定）\r\n            \"price\": \"200.00\", // 消费\r\n            \"time\": \"17:00-19:00\", // 预定时间\r\n            \"tableId\": 341 // 桌子id\r\n        }\r\n    ]\r\n}"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "x-run-in-apifox'": "https://www.apifox.cn/web/project/1843844/apis/api-47862947-run"
+      }
+    },
+    "/shop/table": {
+      "post": {
+        "summary": "更改桌子状态（手动控制桌子是否可用）",
+        "x-apifox-folder": "商家接口",
+        "x-apifox-status": "developing",
+        "deprecated": false,
+        "description": "",
+        "tags": [
+          "商家接口"
+        ],
+        "parameters": [],
+        "requestBody": {
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "id": {
+                    "type": "string",
+                    "description": "桌子id",
+                    "example": "1"
+                  },
+                  "status": {
+                    "type": "string",
+                    "description": "0: 可用， 1：不可用",
+                    "example": "1"
+                  },
+                  "token": {
+                    "type": "string",
+                    "example": "eyJ0aW1lc3RhbXAiOjE2Njc3MTYwMTQwNTYsInVzZXJJZCI6MSwic2hvcElkIjoxLCJzaWduIjoiOWMyNzgyNDM3ODJlZDdhOTBjY2FkYWNhMDRkMmFiY2Y4YjZmZTZkMTlhNmRjMzQyYzVlODAyYWQzZDNlYzU4YyJ9"
+                  }
+                },
+                "required": [
+                  "id",
+                  "status",
+                  "token"
+                ]
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "成功",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {},
+                  "x-apifox-orders": [],
+                  "x-apifox-ignore-properties": []
+                },
+                "examples": {
+                  "1": {
+                    "summary": "成功示例",
+                    "value": {
+                      "data": {},
+                      "msg": "更改成功~",
+                      "status": 200
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "x-run-in-apifox'": "https://www.apifox.cn/web/project/1843844/apis/api-47862948-run"
+      }
+    },
+    "/shop/mail": {
+      "post": {
+        "summary": "获取商家邮件信息",
+        "x-apifox-folder": "商家接口",
+        "x-apifox-status": "developing",
+        "deprecated": false,
+        "description": "",
+        "tags": [
+          "商家接口"
+        ],
+        "parameters": [],
+        "requestBody": {
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "token": {
+                    "type": "string",
+                    "example": "eyJ0aW1lc3RhbXAiOjE2Njc3MTYwMTQwNTYsInVzZXJJZCI6MSwic2hvcElkIjoxLCJzaWduIjoiOWMyNzgyNDM3ODJlZDdhOTBjY2FkYWNhMDRkMmFiY2Y4YjZmZTZkMTlhNmRjMzQyYzVlODAyYWQzZDNlYzU4YyJ9"
+                  },
+                  "type": {
+                    "type": "string",
+                    "description": "0: 消息  1：通知 2：评论",
+                    "example": "0"
+                  }
+                },
+                "required": [
+                  "token",
+                  "type"
+                ]
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "成功",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {},
+                  "x-apifox-orders": [],
+                  "x-apifox-ignore-properties": []
+                },
+                "examples": {
+                  "1": {
+                    "summary": "成功示例",
+                    "value": "{\r\n\"data\":{\r\n    \"img\":\"用户头像.jpg\",\r\n    \"name\":\"用户名字\",\r\n    \"info\":\"信息\",\r\n    \"isShowState\":\"false\",// 邮件状态true已读false未读\r\n    \"mail_id\":123\r\n},\r\n\"msg\":\"获取数据成功~\",\r\n\"status\":200\r\n}"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "x-run-in-apifox'": "https://www.apifox.cn/web/project/1843844/apis/api-47862949-run"
+      }
+    },
+    "/shop/mail/status": {
+      "post": {
+        "summary": "更改邮件状态（已读未读）",
+        "x-apifox-folder": "商家接口",
+        "x-apifox-status": "developing",
+        "deprecated": false,
+        "description": "",
+        "tags": [
+          "商家接口"
+        ],
+        "parameters": [],
+        "requestBody": {
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "id": {
+                    "type": "string",
+                    "description": "邮件id",
+                    "example": "1"
+                  },
+                  "isRead": {
+                    "type": "string",
+                    "description": "0: 未读  1：已读",
+                    "example": "0"
+                  },
+                  "token": {
+                    "type": "string",
+                    "example": "eyJ0aW1lc3RhbXAiOjE2Njc3MTYwMTQwNTYsInVzZXJJZCI6MSwic2hvcElkIjoxLCJzaWduIjoiOWMyNzgyNDM3ODJlZDdhOTBjY2FkYWNhMDRkMmFiY2Y4YjZmZTZkMTlhNmRjMzQyYzVlODAyYWQzZDNlYzU4YyJ9"
+                  }
+                },
+                "required": [
+                  "id",
+                  "isRead",
+                  "token"
+                ]
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "成功",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {},
+                  "x-apifox-orders": [],
+                  "x-apifox-ignore-properties": []
+                }
+              }
+            }
+          }
+        },
+        "x-run-in-apifox'": "https://www.apifox.cn/web/project/1843844/apis/api-47862950-run"
+      }
+    },
+    "/shop/order/info": {
+      "post": {
+        "summary": "获取用户预定详细信息",
+        "x-apifox-folder": "商家接口",
+        "x-apifox-status": "developing",
+        "deprecated": false,
+        "description": "",
+        "tags": [
+          "商家接口"
+        ],
+        "parameters": [],
+        "requestBody": {
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "id": {
+                    "type": "string",
+                    "example": "36"
+                  },
+                  "token": {
+                    "type": "string",
+                    "example": "eyJ0aW1lc3RhbXAiOjE2NjczODcxNzAwOTIsInVzZXJJZCI6MSwic2hvcElkIjowLCJzaWduIjoiNTRmYWY5YWI1ODYwMjllOTNiNzk1ZDM5M2M5ZTYxZjk5NGY3MWJlOTcxMmRmOGFiMDRjNWU0ZWUzNjA5YWNmMyJ9"
+                  }
+                },
+                "required": [
+                  "id",
+                  "token"
+                ]
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "成功",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {},
+                  "x-apifox-orders": [],
+                  "x-apifox-ignore-properties": []
+                },
+                "examples": {
+                  "1": {
+                    "summary": "成功示例",
+                    "value": "{\n    \"code\": 0,\n    \"msg\": \"获取数据成功~\",\n    \"data\": {\n        \"orderDetail\": {\n            \"createdAt\": \"预定时间\",\n            \"mealTime\": \"用餐时间\",\n            \"quanlity\": \"用餐人数\",\n            \"tableCount\": \"用餐桌数\",\n            \"name\": \"用户预定=姓名\",\n            \"mail\": \"邮箱\",\n            \"phone\": \"电话\",\n            \"message\": \"留言\"\n        }\n    },\n}"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "x-run-in-apifox'": "https://www.apifox.cn/web/project/1843844/apis/api-47862951-run"
+      }
+    },
+    "/uploadimg": {
+      "post": {
+        "summary": "上传图片",
+        "x-apifox-folder": "其他",
+        "x-apifox-status": "developing",
+        "deprecated": false,
+        "description": "",
+        "tags": [
+          "其他"
+        ],
+        "parameters": [],
+        "requestBody": {
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "file": {
+                    "type": "string",
+                    "example": "file://C:\\Users\\Administrator.USER-20181115EQ\\Desktop\\微信图片_20220804215142.jpg",
+                    "format": "binary"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "成功",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {},
+                  "x-apifox-orders": [],
+                  "x-apifox-ignore-properties": []
+                }
+              }
+            }
+          }
+        },
+        "x-run-in-apifox'": "https://www.apifox.cn/web/project/1843844/apis/api-47862952-run"
+      }
+    }
+  },
+  "components": {
+    "schemas": {}
+  },
+  "servers": [
+    {
+      "url": "http://127.0.0.1",
+      "description": "正式环境"
+    }
+  ]
+}
