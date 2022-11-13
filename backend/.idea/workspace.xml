@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="2014ea32-4417-455b-b912-0e6ec89f1f4c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/ezeat/validator/CategoryVd.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/项目说明/餐厅预定项目文件夹说明.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/项目说明/餐厅预定项目文件夹说明.psd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ezeat/controller/UsersController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ezeat/controller/UsersController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ezeat/mapper/AppointmentsMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ezeat/mapper/AppointmentsMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ezeat/service/MessagesService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ezeat/service/MessagesService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ezeat/service/ShopsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ezeat/service/ShopsService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ezeat/service/impl/MessagesServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ezeat/service/impl/MessagesServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ezeat/service/impl/ShopsServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ezeat/service/impl/ShopsServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ezeat/service/impl/TablesServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ezeat/service/impl/TablesServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ezeat/vo/UserOrderVo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ezeat/vo/UserOrderVo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ReservationSystem-1.0-SNAPSHOT.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/target/ReservationSystem-1.0-SNAPSHOT.jar.original" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ezeat/common/util/TokenUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ezeat/common/util/TokenUtils.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ezeat/controller/UsersController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ezeat/controller/UsersController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ezeat/entity/Appointments.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ezeat/entity/Appointments.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ezeat/entity/Carousels.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ezeat/entity/Carousels.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ezeat/entity/Collections.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ezeat/entity/Collections.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ezeat/entity/Users.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ezeat/entity/Users.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ezeat/mapper/AppointmentsMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ezeat/mapper/AppointmentsMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ezeat/service/ShopsService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ezeat/service/ShopsService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ezeat/service/impl/MessagesServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ezeat/service/impl/MessagesServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ezeat/service/impl/ShopsServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ezeat/service/impl/ShopsServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ezeat/service/impl/TablesServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ezeat/service/impl/TablesServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ezeat/service/impl/UsersServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ezeat/service/impl/UsersServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ezeat/validator/AppointmentAddVd.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ezeat/validator/AppointmentAddVd.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ezeat/validator/TableStatusVd.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ezeat/validator/TableStatusVd.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ezeat/vo/ShopOrderVo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ezeat/vo/ShopOrderVo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ezeat/vo/UserOrderVo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ezeat/vo/UserOrderVo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/com.ezeat-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/com.ezeat-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="JUnit5 Test Class" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="C:\Users\Administrator\.m2\repository" />
+        <option name="nonRecursive" value="true" />
+        <option name="outputLevel" value="DEBUG" />
+        <option name="userSettingsFile" value="C:\Users\Administrator\.m2\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2GoHeceltSwkgpd3JXbTo0jTkBz" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
+    <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.ezeat.utils" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\jobs\java\reservation_system_server\src\main\resources\static\cert" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\jobs\java\reservation_system_server\src\main\java\com\ezeat\config" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.ezeat" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.ezeat.common.util" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.ezeat.validator" />
+      <recent name="com.ezeat.vo" />
+      <recent name="com.ezeat.controller" />
+      <recent name="com.ezeat.service.impl" />
+      <recent name="com.ezeat.service" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.ReservationSystemApplication">
+    <configuration name="ReservationSystemApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="MAIN_CLASS_NAME" value="com.ezeat.ReservationSystemApplication" />
+      <module name="ReservationSystem" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ezeat.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AESCipherUtilsTest.encryptTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ReservationSystem" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ezeat.temp.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.ezeat.common.util" />
+      <option name="MAIN_CLASS_NAME" value="com.ezeat.common.util.AESCipherUtilsTest" />
+      <option name="METHOD_NAME" value="encryptTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CheckCodeUtilTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ReservationSystem" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ezeat.temp.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.ezeat.common.util" />
+      <option name="MAIN_CLASS_NAME" value="com.ezeat.common.util.CheckCodeUtilTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UsersServiceTest.login" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ReservationSystem" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ezeat.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.ezeat.service" />
+      <option name="MAIN_CLASS_NAME" value="com.ezeat.service.UsersServiceTest" />
+      <option name="METHOD_NAME" value="login" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UsersServiceTest.loginTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ReservationSystem" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ezeat.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.ezeat.service" />
+      <option name="MAIN_CLASS_NAME" value="com.ezeat.service.UsersServiceTest" />
+      <option name="METHOD_NAME" value="loginTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.ReservationSystemApplication" />
+        <item itemvalue="JUnit.CheckCodeUtilTest" />
+        <item itemvalue="JUnit.AESCipherUtilsTest.encryptTest" />
+        <item itemvalue="JUnit.UsersServiceTest.loginTest" />
+        <item itemvalue="JUnit.UsersServiceTest.login" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2014ea32-4417-455b-b912-0e6ec89f1f4c" name="Default Changelist" comment="" />
+      <created>1667048118209</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1667048118209</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+</project>
